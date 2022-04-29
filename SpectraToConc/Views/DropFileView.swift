@@ -12,6 +12,8 @@ struct DropFileView: View {
     @Binding var url: URL?
     @State var isHoveredOver = false
     
+    @State var smallChange = false
+    
     var body: some View {
         let dropDelegate = CSVURLDropDelegate(url: $url, isHoveredOver: $isHoveredOver)
 
