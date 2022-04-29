@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct SpectraToConcApp: App {
+    
+    @StateObject var viewModel = ViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
